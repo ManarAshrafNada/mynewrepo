@@ -1,0 +1,27 @@
+﻿
+@model RaysLab
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h2> Create Rays_Lab</h2>
+<form asp-action=@ViewBag.Title>
+    <div asp-validation-summary="All" />
+
+    <label asp-for="Rays_Lab_ID" class="control-label"></label>
+    <br />
+    <input asp-for="Rays_Lab_ID" class="form-control"  />
+    <br />
+    <label asp-for="Rays_Lab_Name" class="custom-control-label"></label>
+    <br />
+    <input asp-for="Rays_Lab_Name" class="form-control" />
+    <br />
+    <label asp-for="Rays_Lab_Address" class="custom-control-label"></label>
+    <br />
+    <input asp-for="Rays_Lab_Address" class="form-control" />
+    <br />
+
+    <input type="submit" value="Save" class="btn btn-primary" />
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+
+</form>
